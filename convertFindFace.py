@@ -142,7 +142,7 @@ def face(update,context):
 
 def main():
 
-    updater = Updater("Your Telegam Bot Secret Code Here", use_context=True)
+    updater = Updater("Telegam Bot Secret Code Here", use_context=True)
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
