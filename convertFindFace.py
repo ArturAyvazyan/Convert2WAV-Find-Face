@@ -64,7 +64,7 @@ def getvoice(update, context):
     gg = g[1].split('.')
     dest_filename = 'output' + f'{gg[0]}' + '.wav'
 
-    process = subprocess.run(['ffmpeg', '-i', src_filename, dest_filename]) #прогоняем чтобы все src cделать dest через библиотеку ffmpeg
+    process = subprocess.run(['ffmpeg', '-i', src_filename, dest_filename])
     if process.returncode != 0:
         raise Exception("Something went wrong")
 
@@ -97,7 +97,7 @@ def getaudio(update, context):
     ll = l[1].split('.')
     dest_filename = 'output' + f'{ll[0]}' + '.wav'
 
-    process = subprocess.run(['ffmpeg', '-i', src_filename, dest_filename]) #прогоняем чтобы все src cделать dest через библиотеку ffmpeg
+    process = subprocess.run(['ffmpeg', '-i', src_filename, dest_filename])
     if process.returncode != 0:
         raise Exception("Something went wrong")
     
@@ -142,7 +142,7 @@ def face(update,context):
 
 def main():
 
-    updater = Updater("1252155050:AAEtDOGvecT8bDQWoj2Ja1LNC4LillgKmiE", use_context=True)
+    updater = Updater("Your Telegam Bot Secret Code Here", use_context=True)
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start))
