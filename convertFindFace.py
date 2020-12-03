@@ -19,9 +19,9 @@ import cv2
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-AudioSegment.converter = 'C:\\Program Files (x86)\\Python37-32\Lib\\ffmpeg\\bin\\ffmpeg.exe'
-AudioSegment.ffmpeg = "C:\\Program Files (x86)\\Python37-32\Lib\\ffmpeg\\bin\\ffmpeg.exe"
-AudioSegment.ffprobe ="C:\\Program Files (x86)\\Python37-32\Lib\\ffmpeg\\bin\\ffprobe.exe"
+AudioSegment.converter = 'PATH\TO\ffmpeg.exe'
+AudioSegment.ffmpeg = "PATH\TO\ffmpeg.exe"
+AudioSegment.ffprobe ="PATH\TO\ffprobe.exe"
 
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
